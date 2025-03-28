@@ -1,0 +1,12 @@
+DROP TABLE IF EXISTS matches;
+
+CREATE TABLE matches (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  homeTeam TEXT NOT NULL,
+  awayTeam TEXT NOT NULL,
+  matchDate TEXT NOT NULL,
+  goals INTEGER DEFAULT 0,
+  yellowCards INTEGER DEFAULT 0,
+  redCards INTEGER DEFAULT 0,
+  extraTime TEXT
+);
